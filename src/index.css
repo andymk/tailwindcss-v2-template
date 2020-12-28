@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+.wrapper {
+  @apply flex justify-center items-center h-screen;
+}
+
+.card {
+  @apply border rounded-lg m-10 p-10 bg-white shadow-sm w-full max-w-sm;
+}
+
+[type="text"],
+[type="password"],
+[type="email"],
+[type="number"],
+[type="url"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="time"],
+[type="search"],
+[type="tel"],
+[type="checkbox"],
+[type="radio"],
+[multiple],
+textarea,
+select {
+  @apply rounded-md border-gray-100 border shadow-sm bg-gray-100 focus:border-lightblue-300 focus:ring focus:ring-lightblue-200 focus:ring-opacity-50;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  @apply text-lightblue-400;
+}
+
+.formAvatar {
+  @apply text-gray-300;
+}
+
+.btn {
+  @apply rounded border px-6 py-2 bg-lightblue-400 text-gray-100 border-lightblue-400 shadow-sm hover:bg-lightblue-600 hover:ring focus:ring-lightblue-200 hover:ring-opacity-50;
+}
